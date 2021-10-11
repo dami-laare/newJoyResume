@@ -555,47 +555,9 @@ img.hop {
     
     
 }
-@media (max-width: 529px){
-    div.dwldContainer {
-        z-index: 25;
-        position: absolute;
-        top: 396px;
-        left: 50%;
-        width: fit-content;
-        height: fit-content;
-        border: 3px solid #74560d;
-        transition: 300ms;
-        font-family: 'Cairo', sans-serif;
-        font-weight: 700;
-        letter-spacing: 2px;
-        transform: translate(-50%, 0%);
-        padding: 0.5rem;
-    }
-    div.dwldContainer:hover {
-        border: 3px solid #b18516;
-        padding: 1rem;
-    }
-}
+
 @media (max-width: 482px){
-    div.dwldContainer {
-        z-index: 25;
-        position: absolute;
-        top: 415px;
-        left: 50%;
-        width: fit-content;
-        height: fit-content;
-        border: 3px solid #74560d;
-        transition: 300ms;
-        font-family: 'Cairo', sans-serif;
-        font-weight: 700;
-        letter-spacing: 2px;
-        transform: translate(-50%, 0%);
-        padding: 0.5rem;
-    }
-    div.dwldContainer:hover {
-        border: 3px solid #b18516;
-        padding: 1rem;
-    }
+    
     a.icon-items {
         font-size: 12px;
     }
