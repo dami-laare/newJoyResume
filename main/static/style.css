@@ -1,0 +1,652 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Cairo', sans-serif;
+}
+h5.project-link-heading {
+    font-weight: 700;
+}
+div.portfolio-main {
+    position: relative;
+    top: 110px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding: 0 5rem;
+    /* height: fit-content; */
+}
+img.portfolio-images {
+    border-radius: 20px;
+}
+a.blog-links {
+    text-decoration: underline;
+    color: black;
+    font-size: 0.8em;
+    transition: 200ms;
+    margin-top: 0.75rem;
+}
+a.blog-links:hover {
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.52);
+}
+img.hop {
+    width: 69%;
+}
+@media (min-width: 845px){
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    div.layerBKG1 {
+        position:absolute;
+        top: 0;
+        z-index: 0;
+        width: 100%;
+        height: 610px;
+        background-image: url('images/mainBkg.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-y: -108px;
+    }
+    div.about {
+        position:absolute;
+        top: 610px;
+        z-index: 0;
+        width: 100%;
+        height: 350px;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 20px;
+        padding: 55px 260px 60px 67px;
+    }
+    div.my-footer {
+        position:relative;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+        height: fit-content;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 20px;
+        /* padding: 30px 0px 40px 50px; */
+    }
+
+    div.portfolio-contact-container {
+        position:absolute;
+        top: 940px;
+        z-index: 0;
+        width: 100%;
+        height: fit-content;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 20px;
+        /* padding: 60px 310px 60px 67px; */
+        background: transparent;
+    }
+
+    div.navigation-bar{
+        display: flex;
+        position: fixed;
+        width: 100%;
+        height: 51px;
+        top: 0;
+        z-index: 120;
+        background-color:transparent;
+        transition: 300ms;
+    }
+    
+    div.navigation-bar-backdrop {
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+    }
+    
+    div.nameContainer {
+        flex-basis: 70%;
+        flex-shrink: 1;
+        height: 51px;
+    }
+    
+    a.name {  
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: 'Plaster', cursive;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 2px;
+        position: absolute;
+        top: 10px;
+        margin-left: 40px;
+    }
+
+    a.nav-item {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: 'Cairo', sans-serif;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    div.navItemContainer {
+        width: 150px; 
+        padding: 0 10px;
+        padding-top: 10px;   
+    }
+    i.sidebar-icon {
+        display: none;
+        font-size: 16px;
+        margin-right:20px;
+    }
+
+    div.navLnk{
+        flex-shrink: 0;
+        flex-basis: 30%;
+        display: flex;
+    }
+
+    div.profileImg {
+        position: absolute;
+        z-index: 100;
+        left: 120px;
+        top: 170px;
+        /* transform: translate(-50%, 0%); */
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-image: url('images/mainImg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 500ms;
+    }
+    
+    div.mainGreet{
+        width: 40%;
+        height: 300px;
+        position: absolute;
+        background: transparent;
+        top: 200px;
+        left: 460px;
+        transition: 500ms;
+    }
+    
+    .greeting {
+        color: #74560d;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 600;
+        letter-spacing: 2px;
+    }
+
+    div.icons {
+        position: absolute;
+        top: 320px;
+        left: 452px;
+        z-index: 20;
+        transition: 500ms;
+    }
+    
+    a.icon-items {
+        margin: 0px 10px;
+        font-size: 20px;
+        transition: 200ms;
+        color: black;
+    }
+    a.icon-items:hover {
+        font-size: 25px;
+        color: rgb(124, 124, 124);
+    }
+
+    a.dwld {
+        text-decoration: none;
+        color: #74560d;
+    }
+
+    div.dwldContainer {
+        z-index: 25;
+        width: fit-content;
+        height: fit-content;
+        border: 3px solid #74560d;
+        transition: 200ms;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        padding: 0.5rem;
+    }
+
+    div.dwldContainer:hover {
+        border: 3px solid #b18516;
+        padding: 1rem;
+    }
+    div.icon-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 150;
+        margin-top: 6px;
+        margin-right: 11px;
+    }
+    a.icon {
+        color: rgb(75, 75, 75);
+        text-decoration: none;
+    }
+    i.skill-icon {
+        font-size:70px;
+        position:relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    a.project-link {
+        text-decoration: none;
+        color:inherit;
+        transition: 200ms;
+        
+    }
+    
+    a.project-link:hover {
+        padding: 1.5rem 0 1.5rem 0;
+    }
+    a.project-link-details {
+        text-decoration: none;
+        color:inherit;
+        transition: 200ms;
+        
+    }
+    a.project-link-details:hover {
+        padding: 1.2rem 0 1.2rem 0;
+        text-decoration: underline;
+    }
+
+
+}
+
+@media (max-width: 1009px)  and (min-width: 845px) {
+    div.icons {
+        position: absolute;
+        top: 362px;
+        left: 452px;
+        z-index: 20;
+        transition: 500ms;
+    }
+}
+
+@media (max-width: 1113px) and (min-width: 1010px)  {
+    div.icons {
+        position: absolute;
+        top: 335px;
+        left: 452px;
+        z-index: 20;
+        transition: 500ms;
+    }
+}
+@media (max-width: 992px){
+    img.hop {
+        width: 100%;
+    }
+}
+
+@media (max-width: 844px){
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    div.layerBKG1 {
+        position:absolute;
+        top: 0;
+        z-index: 0;
+        width: 100%;
+        height: 610px;
+        background-image: url('images/mainBkg.jpg');
+        background-size:cover;
+        background-attachment: fixed;
+        background-position-y: 0;
+        background-repeat: no-repeat;
+    }
+    div.about {
+        position:absolute;
+        top: 610px;
+        z-index: 0;
+        width: 100%;
+        height: 250px;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 16px;
+        padding: 55px 10px 60px 10px;
+    }
+    div.portfolio-contact-container {
+        position:absolute;
+        top: 860px;
+        z-index: 0;
+        width: 100%;
+        height: fit-content;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 20px;
+        background: transparent;
+    }
+    div.my-footer {
+        position:relative;
+        bottom: 0;
+        z-index: 0;
+        width: 100%;
+        height: fit-content;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 20px;
+        /* padding: 30px 0px 40px 50px; */
+    }
+    a.project-link {
+        text-decoration: none;
+        color:inherit;
+    }
+    
+    div.container {
+        position:absolute;
+        top: 610px;
+        z-index: 0;
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+    }
+    
+    div.navigation-bar{
+        display: flex;
+        flex-wrap: wrap;
+        position: fixed;
+        width: 100%;
+        height: 57px;
+        top: 0;
+        z-index: 5000;
+        background-color:transparent;
+        transition: 300ms;
+    }
+    
+    div.navigation-bar-backdrop {
+        background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(10px);
+    }
+    
+    div.nameContainer {
+        flex-basis: 100%;
+        flex-shrink: 1;
+        height: 57px;
+        transition: 1s;
+    }
+    
+    a.name {  
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: 'Barriecito', cursive;
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin-left: 60px;
+    }
+    
+    a.nav-item {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: 'Cairo', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    
+    div.navItemContainer {
+        /* transform: translate(-50%, 0%); */
+        padding: 25px 0px 0px 40px;
+        transition: 1s;
+
+    }
+    i.sidebar-icon {
+        font-size: 16px;
+        margin-right:20px;
+    }
+
+    div.navLnk{
+        position: fixed;
+        left: -240px;
+        z-index: 10000;
+        display: block;
+        transition: 1s;
+        height: 120vh;
+        width: 240px;
+        overflow: hidden;
+        background-color: rgb(24, 24, 24);
+        /* backdrop-filter: blur(10px); */
+        
+    }
+    div#opaque-bkg {
+        position:fixed;
+        top: 0;
+        z-index: 900;
+        width: 0vw;
+        height: 100vh;
+        background-color: transparent;
+        transition: background-color 2s, width 10ms;
+    }
+    
+    div.profileImg {
+        position: absolute;
+        z-index: 100;
+        left: 50%;
+        top: 61px;
+        transform: translate(-50%, 0%);
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-image: url('images/mainImg.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        transition: 500ms;
+    }
+    
+    div.mainGreet{
+        width: 70%;
+        height: 300px;
+        position: absolute;
+        background: transparent;
+        top: 270px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        transition: 500ms;
+    }
+
+    .greeting {
+        color: #74560d;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-align: center;
+        font-size: 16px;
+    }
+    
+    div.icons {
+        position: absolute;
+        top: 340px;
+        left: 50%;
+        z-index: 20;
+        transition: 500ms;
+        transform: translate(-50%, 0%);
+    }
+    
+    a.icon-items {
+        font-size: 20px;
+        color: #000;
+    }
+    
+    a.dwld {
+        text-decoration: none;
+        color: #74560d;
+    }
+    
+    div.dwldContainer {
+        z-index: 25;
+        position: relative;
+        /* top: 379px; */
+        left: 50%;
+        width: fit-content;
+        height: fit-content;
+        border: 3px solid #74560d;
+        transition: 300ms;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        transform: translate(-50%, 0%);
+        padding: 0.5rem;
+    }
+    
+    div.dwldContainer:hover {
+        border: 3px solid #b18516;
+        padding: 1rem;
+    }
+    div.icon-container {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 150;
+        width: 40px;
+        height: 40px;
+    }
+    a.icon {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    i.skill-icon {
+        font-size:70px;
+        position:relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    a.project-link {
+        text-decoration: none;
+        color:inherit;
+        transition: 200ms;
+        
+    }
+    
+    a.project-link:hover {
+        padding: 1.5rem 0 1.5rem 0;
+    }
+    a.project-link-details {
+        text-decoration: none;
+        color:inherit;
+        transition: 200ms;
+        
+    }
+    a.project-link-details:hover {
+        padding: 1.2rem 0 1.2rem 0;
+        text-decoration: underline;
+    }
+    
+    
+}
+@media (max-width: 529px){
+    div.dwldContainer {
+        z-index: 25;
+        position: absolute;
+        top: 396px;
+        left: 50%;
+        width: fit-content;
+        height: fit-content;
+        border: 3px solid #74560d;
+        transition: 300ms;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        transform: translate(-50%, 0%);
+        padding: 0.5rem;
+    }
+    div.dwldContainer:hover {
+        border: 3px solid #b18516;
+        padding: 1rem;
+    }
+}
+@media (max-width: 482px){
+    div.dwldContainer {
+        z-index: 25;
+        position: absolute;
+        top: 415px;
+        left: 50%;
+        width: fit-content;
+        height: fit-content;
+        border: 3px solid #74560d;
+        transition: 300ms;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        transform: translate(-50%, 0%);
+        padding: 0.5rem;
+    }
+    div.dwldContainer:hover {
+        border: 3px solid #b18516;
+        padding: 1rem;
+    }
+    a.icon-items {
+        font-size: 12px;
+    }
+    div.about {
+        position:absolute;
+        top: 610px;
+        z-index: 0;
+        width: 100%;
+        height: 300px;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 16px;
+        padding: 55px 10px 60px 10px;
+    }
+    div.portfolio-contact-container {
+        position:absolute;
+        top: 910px;
+        z-index: 0;
+        width: 100%;
+        height: fit-content;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 20px;
+        background: transparent;
+    }
+}
+@media (max-width: 345px) {
+    div.about {
+        position:absolute;
+        top: 610px;
+        z-index: 0;
+        width: 100%;
+        height: 350px;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 16px;
+        padding: 55px 10px 60px 10px;
+    }
+    div.portfolio-contact-container {
+        position:absolute;
+        top: 960px;
+        z-index: 0;
+        width: 100%;
+        height: fit-content;
+        font-family: 'Cairo', sans-serif;
+        font-weight: 500;
+        letter-spacing: 2px;
+        font-size: 20px;
+        background: transparent;
+    } 
+}

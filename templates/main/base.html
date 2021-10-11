@@ -1,0 +1,76 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/8959a195a4.js" crossorigin="anonymous"></script>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Padauk&family=Barriecito&family=Lexend+Peta:wght@400;500&family=Plaster&display=swap" rel="stylesheet">
+        <link rel="stylesheet"  href="{%  static 'style.css' %}">
+        <title>{% block title%}JOY AIFUOBHOKHAN{% endblock%}</title>
+    </head>
+<body>
+    <div class="navigation-bar" id="header">
+        <div class="nameContainer pt-3 ps-2" onclick="closefunc()"><a class="name" href="{% block home%}#{% endblock%}">JOY AIFUOBHOKHAN</a></div>
+        <div class="navLnk" id="nav-link">
+            <div class="navItemContainer" onclick="closefunc()">       
+                <a href="{% block about_me %}#about-me{% endblock%}" class="nav-item"><i class="fas fa-address-card sidebar-icon"></i>ABOUT ME</a>
+            </div>
+            <div class="navItemContainer" onclick="closefunc()">
+                <a href="{% block portfolio %}#portfolio{% endblock%}" class="nav-item"><i class="fas fa-briefcase sidebar-icon"></i>PORTFOLIO</a>
+            </div>
+            <div class="navItemContainer" onclick="closefunc()">
+                <a href="#contact" class="nav-item"><i class="fas fa-phone sidebar-icon"></i>CONTACT</a>
+            </div>
+        </div>
+        <div class="icon-container pt-3 ps-3" id="collapse-icon" onclick="myFunction()">
+            
+            <i class="fas fa-bars" id="collapse-icon-true" style="font-size: 30px;"></i>
+            
+        </div>
+    </div>
+    {% block body%}
+
+    {% endblock%}
+    {% block detailBody%}
+
+    {% endblock%}
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="{% static 'script.js'%}"></script>
+    <script>
+        const header = document.querySelector(".nameContainer");
+        var navLnk = document.getElementById("nav-link");
+
+
+        function myFunction() {
+            if (navLnk.className === "navLnk") {
+                navLnk.style.left = '0px';
+                navLnk.className += " revealed";
+            } 
+        
+        }
+    
+        const closefunc = () => {
+            navLnk.style.left = '-240px';
+            navLnk.className = "navLnk";
+
+        }
+        document.onclick = (event) => {
+            if (navLnk.className === "navLnk revealed") {
+                if (event.target.id !== "nav-link" && event.target.id !== "collapse-icon" && event.target.id !== "collapse-icon-true"){
+                    closefunc()
+                }
+            }
+        }
+        
+    </script>
+</body>
+</html>
