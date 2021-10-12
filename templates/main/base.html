@@ -16,6 +16,7 @@
         <title>{% block title%}JOY AIFUOBHOKHAN{% endblock%}</title>
     </head>
 <body>
+    <!-- Navigation bar start -->
     <div class="navigation-bar" id="header">
         <div class="nameContainer pt-3 ps-2" onclick="closefunc()"><a class="name" href="{% block home%}#{% endblock%}">JOY AIFUOBHOKHAN</a></div>
         <div class="navLnk" id="nav-link">
@@ -35,6 +36,7 @@
             
         </div>
     </div>
+    <!-- Navigation bar end -->
     {% block body%}
 
     {% endblock%}
@@ -46,23 +48,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="{% static 'script.js'%}"></script>
     <script>
+        // Javascript function to display and close side bar on smaller devices(less that 845px screen width)
         const header = document.querySelector(".nameContainer");
         var navLnk = document.getElementById("nav-link");
-
-
         function myFunction() {
             if (navLnk.className === "navLnk") {
                 navLnk.style.left = '0px';
                 navLnk.className += " revealed";
             } 
-        
         }
     
         const closefunc = () => {
             navLnk.style.left = '-240px';
             navLnk.className = "navLnk";
-
         }
+
         document.onclick = (event) => {
             if (navLnk.className === "navLnk revealed") {
                 if (event.target.id !== "nav-link" && event.target.id !== "collapse-icon" && event.target.id !== "collapse-icon-true"){
@@ -70,7 +70,6 @@
                 }
             }
         }
-        
     </script>
 </body>
 </html>
