@@ -102,19 +102,20 @@ img.hop {
         background-color:transparent;
         transition: 300ms;
     }
-    
+
     div.navigation-bar-backdrop {
         background-color: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
-    
+
     div.nameContainer {
         flex-basis: 70%;
         flex-shrink: 1;
         height: 51px;
     }
-    
-    a.name {  
+
+    a.name {
         text-decoration: none;
         color: rgb(0, 0, 0);
         font-family: 'Plaster', cursive;
@@ -136,9 +137,9 @@ img.hop {
     }
 
     div.navItemContainer {
-        width: 150px; 
+        width: 150px;
         padding: 0 10px;
-        padding-top: 10px;   
+        padding-top: 10px;
     }
     i.sidebar-icon {
         display: none;
@@ -167,7 +168,7 @@ img.hop {
         background-repeat: no-repeat;
         transition: 500ms;
     }
-    
+
     div.mainGreet{
         width: 40%;
         height: 300px;
@@ -177,7 +178,7 @@ img.hop {
         left: 460px;
         transition: 500ms;
     }
-    
+
     .greeting {
         color: #74560d;
         font-family: 'Cairo', sans-serif;
@@ -192,7 +193,7 @@ img.hop {
         z-index: 20;
         transition: 500ms;
     }
-    
+
     a.icon-items {
         margin: 0px 10px;
         font-size: 20px;
@@ -248,9 +249,9 @@ img.hop {
         text-decoration: none;
         color:inherit;
         transition: 200ms;
-        
+
     }
-    
+
     a.project-link:hover {
         padding: 1.5rem 0 1.5rem 0;
     }
@@ -258,7 +259,7 @@ img.hop {
         text-decoration: none;
         color:inherit;
         transition: 200ms;
-        
+
     }
     a.project-link-details:hover {
         padding: 1.2rem 0 1.2rem 0;
@@ -350,7 +351,7 @@ img.hop {
         text-decoration: none;
         color:inherit;
     }
-    
+
     div.container {
         position:absolute;
         top: 610px;
@@ -360,7 +361,7 @@ img.hop {
         padding: 0;
         margin: 0;
     }
-    
+
     div.navigation-bar{
         display: flex;
         flex-wrap: wrap;
@@ -372,20 +373,21 @@ img.hop {
         background-color:transparent;
         transition: 300ms;
     }
-    
+
     div.navigation-bar-backdrop {
         background-color: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
-    
+
     div.nameContainer {
         flex-basis: 100%;
         flex-shrink: 1;
         height: 57px;
         transition: 1s;
     }
-    
-    a.name {  
+
+    a.name {
         text-decoration: none;
         color: rgb(0, 0, 0);
         font-family: 'Plaster', cursive;
@@ -394,7 +396,7 @@ img.hop {
         letter-spacing: 2px;
         margin-left: 48px;
     }
-    
+
     a.nav-item {
         text-decoration: none;
         color: rgb(255, 255, 255);
@@ -403,7 +405,7 @@ img.hop {
         font-size: 16px;
         letter-spacing: 3px;
     }
-    
+
     div.navItemContainer {
         /* transform: translate(-50%, 0%); */
         padding: 25px 0px 0px 40px;
@@ -426,7 +428,7 @@ img.hop {
         overflow: hidden;
         background-color: rgb(24, 24, 24);
         /* backdrop-filter: blur(10px); */
-        
+
     }
     div#opaque-bkg {
         position:fixed;
@@ -437,7 +439,7 @@ img.hop {
         background-color: transparent;
         transition: background-color 2s, width 10ms;
     }
-    
+
     div.profileImg {
         position: absolute;
         z-index: 100;
@@ -453,7 +455,7 @@ img.hop {
         background-repeat: no-repeat;
         transition: 500ms;
     }
-    
+
     div.mainGreet{
         width: 70%;
         height: 300px;
@@ -473,7 +475,7 @@ img.hop {
         text-align: center;
         font-size: 16px;
     }
-    
+
     div.icons {
         position: absolute;
         top: 340px;
@@ -482,17 +484,17 @@ img.hop {
         transition: 500ms;
         transform: translate(-50%, 0%);
     }
-    
+
     a.icon-items {
         font-size: 20px;
         color: #000;
     }
-    
+
     a.dwld {
         text-decoration: none;
         color: #74560d;
     }
-    
+
     div.dwldContainer {
         z-index: 25;
         position: relative;
@@ -508,7 +510,7 @@ img.hop {
         transform: translate(-50%, 0%);
         padding: 0.5rem;
     }
-    
+
     div.dwldContainer:hover {
         border: 3px solid #b18516;
         padding: 1rem;
@@ -536,9 +538,9 @@ img.hop {
         text-decoration: none;
         color:inherit;
         transition: 200ms;
-        
+
     }
-    
+
     a.project-link:hover {
         padding: 1.5rem 0 1.5rem 0;
     }
@@ -546,18 +548,18 @@ img.hop {
         text-decoration: none;
         color:inherit;
         transition: 200ms;
-        
+
     }
     a.project-link-details:hover {
         padding: 1.2rem 0 1.2rem 0;
         text-decoration: underline;
     }
-    
-    
+
+
 }
 
 @media (max-width: 482px){
-    
+
     a.icon-items {
         font-size: 12px;
     }
@@ -610,5 +612,5 @@ img.hop {
         letter-spacing: 2px;
         font-size: 20px;
         background: transparent;
-    } 
+    }
 }
